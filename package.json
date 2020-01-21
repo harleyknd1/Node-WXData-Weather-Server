@@ -1,0 +1,34 @@
+{
+  "name": "node_weather",
+  "version": "1.0.0",
+  "description": "A drop-in replacement for the deprecated wxdata.weather.com endpoint",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "node node_modules/mocha/bin/_mocha ./test/*test.js --reporter spec --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://repo.nekrova.com/Luna/Node_Weather.git"
+  },
+  "author": "Harley Lafeber",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "express": "^4.17.1",
+    "jsonwebtoken": ">=8.5.1",
+    "jwt-simple": ">=0.5.6",
+    "moment": ">=2.24.0",
+    "tracer": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": ">=4.2.0",
+    "chai-http": ">=4.2.1",
+    "husky": "^4.0.10",
+    "mocha": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
